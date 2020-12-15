@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<link rel="stylesheet" href="../css/new.css">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" ;href="Untitled-1.css">
+
+
+    <title>綺薇ㄉ寫程式初體驗！</title>
+</head>
+
+<body>
+
+
+    <style>
+        #statusbar {
+            position: absolute;
+            left: 0;
+            height: 50px;
+            width: 0;
+            background-color: firebrick;
+        }
+    </style>
+
+    <div class="container-fluid" style="height:100px;color:azure;background-image: url(assets/4.jpg);background-position: bottom;padding:30px;">
+
+
+        <h1>我們與綠的距離</h1>
+    </div>
+
+    <div class="container-fluid" style="background-color:antiquewhite;min-height:200px;padding:30px;">
+        <h3>綠地背後代表生活品質、居住正義問題，都市人必須花到比較多的錢才有綠地。</h3>
+    </div>
+
+    <div id="tofix1" class="container-fluid sticky-top" style="background-color:lightyellow;min-height:50px;">
+        <div id="statusbar"></div>
+    </div>
+
+    <div class="container-fluid" style="height:650px;background-color: antiquewhite;padding:30px;">
+        <h3>離綠地越近，房價越高</h3>
+        <svg id="tofix2" class="sticky-top" width="150px" height="100px" ;>
+            <circle cx="100" cy="50" r="50" fill="green" />
+        </svg>
+
+        <script src="js/Chart.bundle.js"></script>
+        <script src="js/my.Chart.bundle.js"></script>
+
+        <canvas id="canvas" style="padding:5px;width=" 50px;height=50px;></canvas>
+        <script>
+            var ctx = document.getElementById("canvas").getContext('2d');
+
+            var canvas = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["230公尺以內", "230到380", "380到580", "580到950", "950公尺以外"],
+                    datasets: [{
+                        label: '房價與綠地距離變化',
+                        data: [0.0, -0.76, -1.8, -3.37, -7.16],
+                        fill: false,
+                        backgroundColor: 'rgba(212, 106, 106, 106)',
+                        borderColor: 'rgba(212, 106, 106, 1)'
+                    }, ]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+
+        <h7>資料來源：好時價</h7><br><br>
+        <h7>都市公園綠地對於房價之影響＿以高雄為例（論文）：房屋與公園綠地距離對於房價之影響為， 距離每增加一單位(公尺)，即減少房價0.07113萬元，房屋與市政府距離每增加一單位(公尺)，即減少房價0.019696萬元。</h7>
+
+    </div>
+
+    <div id="outer" style="height:1000vh;">
+        <div class="sticky-top">
+            <div id="horizontal" style="height:100vh;width:1200vw;position:absolute;top:50px;left:0;background-color:antiquewhite;">
+                <div class="row">
+
+                    <div class="col-3" style="height:100vh;background-color:antiquewhite;padding:100px;">
+
+                        <p>近年以中正紀念堂周邊住宅房價表現最亮眼，<br>2017年均價一坪87萬元，2018上升至91萬，2019年進一步來到99.5萬，近百萬元。</p>
+
+
+                        <img src="assets/1.jpg" width="500px" height="500px" style="border:2px;solid;padding:10px;">
+
+                    </div>
+
+                    <div class="col-3" style="height:100vh;background-color:blanchedalmond;padding:100px;">
+
+                        <p>大安森林公園去年均價一坪95.7萬，列第二。<br>陳炳辰指出，大安公園雖因去年交易物件以國宅、老舊華廈為主，導致均價下滑，仍是富人購置豪宅首選，<br>近三年周邊豪宅房價維持高檔，「信義聯勤」最高每坪299萬，穩居台北豪宅王。</p>
+
+
+                        <img src="assets/2.jpg" width="500px" height="500px" style="border:2px;solid;padding:10px;">
+
+                    </div>
+
+
+                    <div class="col-3" style="height:100vh;background-color:burlywood;padding:100px;">
+
+                        <p>占地約10公頃的內湖大湖公園，周邊均價一坪53萬元，也算是親民地段。<br>陳炳辰表示，大湖公園湖光山色風景佳，也有游泳池等運動設施，且近捷運站，交通便利。<br>周邊新案不多，房價近三年呈緩步上揚，維持在五字頭。</p>
+
+
+                        <img src="assets/3.jpg" width="500px" height="500px" style="border:2px;solid;padding:10px;">
+                    </div>
+
+                    <div class="col-3" style="height:100vh;background-color:burlywood;padding:100px;">
+
+                        <p>還沒想到放什麼。</p>
+                        <img src="assets/3.jpg" width="500px" height="500px" style="border:2px;solid;padding:10px;">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="" style="height:100vh;background-color:coral;"></div>
+    <div class="" style="height:30vh;background-color:darkgreen;"></div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+</body>
+
+<script>
+    $(document).ready(function() {
+
+        var tofix1_height = $('#tofix1').offset().top;
+        var tofix2_height = $('#tofix2').offset().top;
+
+        $(window).scroll(function() {
+            var max_scroll = $(document).height() - $(window).height();
+            var win_w = $(window).width();
+            var current_pos = $(window).scrollTop();
+            console.log(current_pos);
+
+            var new_width = win_w * current_pos / max_scroll;
+            $('#statusbar').css({
+                'width': new_width
+            });
+
+        });
+    });
+</script>
+
+
+<script>
+    $(window).scroll(function() {
+        var current_pos = $(document).scrollTop();
+        var winw = $(window).width();
+        var outerh = $("#outer").height();
+        var outer_pos = $("#outer").offset().top;
+        console.log(current_pos + "/" + outer_pos);
+        if (current_pos > outer_pos && current_pos <= outer_pos + outerh) {
+            update_left = (-1) * ($("#horizontal").width() - winw) * (current_pos - outer_pos) / outerh;
+            console.log(update_left);
+            $("#horizontal").css("left", update_left);
+        }
+    });
+</script></html>
