@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ParallaxScrolling作業練習</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+
+
+    <style>
+        #div1 {
+            background-image: url(../ParallaxScrolling/assets/snow1.jpg)
+        }
+
+        #div2 {
+            background-image: url(../ParallaxScrolling/assets/snow3.jpg);
+        }
+
+
+        #div5 {
+            background-image: url(../ParallaxScrolling/assets/snow8.jpeg);
+        }
+
+        #div1,
+        #div2,
+        #div3,
+        #div4,
+        #div5 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color:azure;height:70vh;padding:10vh">
+        <h1>日本の冬</h1>
+        <br>
+        <h5>
+            四季のある日本では、冬になると寒い気候を生かしたアクティビティや冬の味覚を楽しむなど、冬らしさを満喫できる過ごし方がたくさんあります。
+            <br><br>
+            《源氏物語》：東南は春の町で紫の上が住み、西南は秋の町で秋好中宮、東北は夏の町で花散里、西北が冬の町で明石の君が住む。
+            <br><br>四季風物滋養了日本文學。<br><br>《枕草子》中，開篇寫「春天是破曉的時分最好」，接著夏天，是夜里最好，有月亮的时候，更不必說。而秋天是傍晚最好，夕阳辉煌地照着。冬天是早晨最好，下雪的时候更不必說。
+
+        </h5>
+    </div>
+    <div id="div1" class="container-fluid innershadow1" style="background-color:black;height:200vh;position:relative;">
+
+        <div style="background-color:transparent;height:2vh">
+
+        </div>
+
+        <div style="background-color:rgba(0,63,76,0.5);height:60vh;padding:10vh;">
+            <font color="white">
+                <h2>目次</h2>
+
+                <h4>
+                    <br>
+
+                    北海道・東北エリア<br><br>関東・甲信越エリア<br><br>北陸・東海・関西エリア<br><br>中四国・九州エリア
+
+
+
+                </h4>
+            </font>
+        </div>
+        <img class="scrollable dropshadow1" data-top=0 data-top2=90 data-left=70 data-left2=0 data-width=7 data-width2=7 src="./assets/snow7.jpg" style="position:absolute;width:20%;top:15%;left:70%;filter:grayscale(.3) blur(0px);">
+        <img class="scrollable dropshadow1" data-top=0 data-top2=80 data-left=60 data-left2=40 data-width=15 data-width2=15 src="../ParallaxScrolling/assets/snow7.jpg" style="position:absolute;width:30%;top:20%;left:50%;">
+        <img class="scrollable dropshadow1" data-top=0 data-top2=90 data-left=70 data-left2=30 data-width=10 data-width2=10 src="../ParallaxScrolling/assets/snow7.jpg" style="position:absolute;width:30%;top:20%;left:50%;">
+
+    </div>
+    <div class="container-fluid" style="background-image: url(../ParallaxScrolling/assets/back2.jpg);min-height: 100px"></div>
+
+
+
+    <div id="div2" class="container-fluid innershadow1" style="background-color:black;height:200vh;position:relative;">
+
+        <div style="background-color:transparent;height:5vh"> </div>
+
+        <div style="background-color:rgba(21,207,204,0.24);height:60vh;padding:10vh;">
+            <font color="white">
+
+                <h2>北陸・東海・関西エリア</h2>
+                <br>
+                <h5> 「国境の長いトンネルを抜けると雪国であった。」<br>穿過縣境長長的隧道，便是雪國了——川端康成
+                </h5>
+                <br>
+                <h6>
+
+                    川端康成筆下駒子與島村相遇，讓駒子心碎而島村迷戀的雪國，就是越後湯澤。
+
+                    <br><br>
+
+                    夜空下一片白茫茫。火車在信號所前停了下來。
+                    <br><br>
+                    越後湯澤位於東京西北方的新潟縣，從上野搭上越新幹線出發，途經過大宮、高崎僅需77分鐘即可抵達。
+                </h6>
+            </font>
+
+
+
+
+        </div>
+
+        <img class="scrollable dropshadow1" data-top=0 data-top2=90 data-left=0 data-left2=45 data-width=20 data-width2=20 src="../ParallaxScrolling/assets/bird.jpg" style="position:absolute;width:20%;top:0%;left:0%;filter:grayscale(.3) blur(0px);">
+        <img class="scrollable dropshadow1" data-top=15 data-top2=70 data-left=15 data-left2=50 data-width=10 data-width2=10 src="../ParallaxScrolling/assets/bird.jpg" style="position:absolute;width:30%;top:15%;left:15%;">
+    </div>
+
+
+    <div class="container-fluid" style="background-image:url(assets/back2.jpg);min-height: 100px"></div>
+
+
+    <div id="div5" class="innershadow1" style="background-color:black;height:200vh;position:relative;">
+
+        <div style="background-color:transparent;height:5vh">
+
+        </div>
+
+
+        <div style="background-color:rgba(0,63,76,0.5);height:60vh;padding:10vh;">
+            <font color="white">
+                <h2>餘情美與季節感</h2>
+                <br>
+                <h6>
+
+                    越後湯澤溫泉作為日本第一位諾貝爾文學獎得獎作家川端康成的代表作品「雪國」的背景舞台而聞名於世。
+                    <br>
+                    <br>
+                    排斥理而重情，文中大量對於雪景的抽象感受的描寫，「莊嚴的氣韻，包含寂寞與悲哀」。
+                    <br>
+                    <br>
+                    深山雪裡的列車駛入安靜地冬夜，對於川端，或是島村而言，越後湯澤是流連忘返的地方，內心的安樂國。
+                    <br>
+                    <br>
+                    駒子雖是陪酒賣身的藝妓，但對川端而言，是「出奇的潔淨」，晨起照鏡的駒子，「縮了縮脖子，鏡子裡白花花閃爍著的，原來是雪。」雪色跟女子通紅臉頰，潔淨與煽情巧而生煙。
+
+
+                    <br>
+                    <br>
+                    徒勞且悲哀是駒子的愛，愛上那位只愛自己，也熱愛徒勞的島村。
+                </h6>
+            </font>
+        </div>
+
+        <img class="scrollable dropshadow1" data-left=0 data-left2=30 data-top=20 data-top2=70 data-width=20 data-width2=15 src="../ParallaxScrolling/assets/boat1.jpg" style="position:absolute;width:30%;top:25%;left:0%;">
+
+        <img class="scrollable dropshadow1" data-left=70 data-left2=40 data-top=20 data-top2=75 data-width=15 data-width2=10 src="../ParallaxScrolling/assets/boat2.jpg" style="position:absolute;width:30%;top:25%;left:0%;">
+    </div>
+
+
+    <div class="container-fluid" style="background-color:rgba(69,246,222,0.24);min-height:100vh;"></div>
+
+
+
+    <script>
+        $(document).ready(function() {
+            var winh = $(window).height(); //存取畫面高度
+            $(window).scroll(function() {
+                var scrolled = $(window).scrollTop(); //存取滾動值
+                $(".scrollable").each(function() {
+                    var parent_pos = $(this).parent().offset().top;
+                    var next_pos = $(this).parent().next().offset().top;
+                    var parent_height = $(this).parent().height();
+                    var parent_scrolled = scrolled - $(this).parent().offset().top;
+                    if (parent_scrolled > 0 && scrolled < next_pos - winh) {
+
+                        if ($(this).attr("data-left")) {
+                            $(this).css('left', (($(this).data('left2') - $(this).data('left')) * parent_scrolled / winh + $(this).data('left')) + '%');
+                        }
+                        if ($(this).attr("data-top")) {
+                            $(this).css('top', (($(this).data('top2') - $(this).data('top')) * parent_scrolled / winh + $(this).data('top')) + '%');
+                        }
+                        if ($(this).attr("data-width")) {
+                            $(this).css('width', (($(this).data('width2') - $(this).data('width')) * parent_scrolled / winh + $(this).data('width')) + '%');
+                        }
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
